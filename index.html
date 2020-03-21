@@ -16,32 +16,51 @@
 
             <nav class="header__navigation">
                 <ul class="navigation">
-                    <li><a href="#">home</a></li>
-                    <li><a href="#">services</a></li>
-                    <li><a href="#">portfolio</a></li>
-                    <li><a href="#">about</a></li>
-                    <li><a href="#">contact</a></li>
+                    <li class="link link-home">
+                        <a href="#" class="navigation-active">home</a>
+                    </li>
+                    <li class="link link-services">
+                        <a href="#">services</a>
+                    </li>
+                    <li class="link link-portfolio">
+                        <a href="#">portfolio</a>
+                    </li>
+                    <li class="link link-about">
+                        <a href="#">about</a>
+                    </li>
+                    <li class="link link-contact">
+                        <a href="#">contact</a>
+                    </li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <section class="slider">
+    <section class="slider" id="home">
         <div class="wrapper relative-block">
-            <button class="button button-left"></button>
 
-            <div class="phone-vertical">
-                <img src="assets/images/iPhone_vertical.png" alt="">
+            <div class="slider-wrapper">
+                <div class="slider__item active slide-1">
+                    <div class="phone-vertical">
+                        <img src="assets/images/iPhone_vertical.png" alt="">
+                    </div>
+                    <div class="phone-horizontal">
+                        <img src="assets/images/iPhone_horizontal.png" alt="">
+                    </div>
+                </div>
+
+                <div class="slider__item slide-2">
+                    <img src="assets/images/Slider-2.png" alt="">
+                </div>
             </div>
-            <div class="phone-horizontal">
-                <img src="assets/images/iPhone_horizontal.png" alt="">
-            </div>
-            
+
+            <button class="button button-left"></button>
             <button class="button button-right"></button>
+
         </div>
     </section>
 
-    <section class="services">
+    <section class="services" id="services">
         <div class="wrapper">
             <h2>
                 Our Services
@@ -132,7 +151,7 @@
         </div>
     </section>
 
-    <section class="portfolio">
+    <section class="portfolio" id="portfolio">
         <div class="wrapper">
             <h2 class="portfolio__heading">
                 Portfolio
@@ -162,11 +181,12 @@
                     <img src="assets/images/portfolio/Image10.png" alt="#">
                     <img src="assets/images/portfolio/Image11.png" alt="#">
                     <img src="assets/images/portfolio/Image12.png" alt="#">
-                </div> 
+                </div>
             </div>
         </div>
     </section>
-    <section class="about-us">
+
+    <section class="about-us" id="about">
         <div class="wrapper">
             <h2 class="about-us__heading">
                 About Us
@@ -224,7 +244,7 @@
         </div>
     </section>
 
-    <section class="contact-us">
+    <section class="contact-us" id="contact">
         <div class="wrapper">
             <h2>Get a Quote</h2>
             <p class="contact-us__description">
@@ -274,6 +294,7 @@
             </div>
         </div>
     </footer>
-    
+
+<script src="script.js"></script>
 </body>
 </html>
